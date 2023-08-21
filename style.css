@@ -1,0 +1,65 @@
+.traffic-light {
+  width: 150px;
+  height: 350px;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.red {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  animation: red 5s linear;
+}
+.orenge {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  animation: orange 3s linear 1 normal 5s;
+}
+.green {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  animation: green 3s linear 1 normal 8s;
+}
+@keyframes red {
+  0% {
+    background: red;
+  }
+  99% {
+    background: red;
+  }
+  100% {
+    background: black;
+  }
+}
+@keyframes orenge {
+  0% {
+    background: orange;
+  }
+  99% {
+    background: orange;
+  }
+  100%{
+    background: black;
+  }
+}
+@keyframes green{
+    0%{
+        background: green;
+    }
+    99%{
+        background: green;
+    }
+    100%{
+        background: black;
+    }
+}
+
